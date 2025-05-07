@@ -22,9 +22,7 @@ def solution(answers):
     max_scores = max(scores)
     
     for i in range(3):
-        if scores[i] == max_scores:
-            answer.append(i+1)
-            
-    
+        if max_scores == scores[i]:
+            answer.append(i + 1)
     
     return answer
